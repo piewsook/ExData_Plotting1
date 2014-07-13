@@ -26,7 +26,7 @@ dat1$Datetime <- datetimeStp
 par(mar=c(4,5,2,1))
 
 #plotting using type "l"
-plot(dat1$Datetime, as.numeric(dat1$Global_active_power), xlab = "", ylab="Global Active Power(kilowatts)", type="l")
+plot(dat1$Datetime, as.character(dat1$Global_active_power), xlab = "", ylab="Global Active Power(kilowatts)", type="l")
 
 
 dev.copy(png, file="plot2.png", width=480, height=480, units="px")
